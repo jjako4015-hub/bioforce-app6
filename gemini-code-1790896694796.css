@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-green: #39FF88;
+  --bright-green: #52FF9A;
+  --light-green: #E8FFF1;
+  --mint: #B8FFD6;
+  --emerald: #18C875;
+  --dark-green: #0B3D24;
+  --white: #FFFFFF;
+  --text-dark: #10251A;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #10251A;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+.glass-panel {
+  background: rgba(232, 255, 241, 0.55);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(57, 255, 136, 0.35);
+  box-shadow: 0 10px 35px 0 rgba(24, 200, 117, 0.12);
+}
+
+.nav-item {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+}
+
+.nav-item:hover {
+  background: #E8FFF1;
+  border-color: #39FF88;
+  box-shadow: 0 0 25px rgba(57, 255, 136, 0.35);
+}
+
+.nav-item.active {
+  background: #39FF88;
+  color: #0B3D24;
+  font-weight: 800;
+  box-shadow: 0 0 30px rgba(57, 255, 136, 0.45);
+}
+
+.glow-btn {
+  background: linear-gradient(135deg, #39FF88 0%, #18C875 100%);
+  box-shadow: 0 0 20px rgba(57, 255, 136, 0.5);
+  transition: all 0.3s ease;
+}
+
+.glow-btn:hover {
+  box-shadow: 0 0 35px rgba(57, 255, 136, 0.85);
+  transform: translateY(-2px);
+}
